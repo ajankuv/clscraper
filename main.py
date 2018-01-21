@@ -24,8 +24,9 @@ while True:
 
 				if 'gtx' in item.summary.lower() or 'gtx' in item.title.lower():
 					msg = "{0}: {1}".format(item.title, item.link)
+					m = msg.decode('ascii', 'ignore')
 					slack.chat.post_message('#general', msg, as_user=True)
-				
+
 		time.sleep(1)
-		
+
 	time.sleep(10)
