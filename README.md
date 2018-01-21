@@ -9,6 +9,6 @@ I use it to find deals on gpu's and other things.
 
 ## build details
 
-`docker build -t cl_scraper .
+docker build -t cl_scraper .
 
-docker run --env SLACKBOT_API_KEY='{your bot api key goes here}' cl_scraper`
+docker run --env SLACKBOT_API_KEY='{your bot api key goes here}' cl_scraper
